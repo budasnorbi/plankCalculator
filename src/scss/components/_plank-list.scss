@@ -1,0 +1,99 @@
+.plank-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:2rem;
+
+    .plank-item{
+        //border:solid 1px red;
+        display:flex;
+        flex-direction: column;
+        
+        min-width:35rem;
+        margin:2.5rem;
+        padding:1rem 0;
+
+        .plank{
+            display:flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            background-color:#4E342E;
+            height: 5rem; width:100%;
+            margin:0 auto;
+            border-radius: 1px;
+            position: relative;
+
+            .plank-result-item{
+                width:var(--plank-width);
+                height:inherit;
+                font-weight: bold;
+
+                border-right:solid 1px rgba(189, 195, 199, 1);
+                transition: background-color .15s ease-in-out;
+                
+            }
+
+            .plank-rest-width{
+                width:var(--plank-width);
+                height:inherit;
+                font-weight: bold;
+                background-color: rgba(231, 76, 60,.8);
+                color:white;               
+            }
+
+        }
+
+        .plank-result-list{
+            position: absolute;
+            height: 100%; width: 100%;
+            top:50%;left:50%;
+
+            transform: translate(-50%,-50%);
+
+            display:flex;
+
+        }
+
+        .plank-ol{
+            display:flex;
+            justify-content: flex-start;
+            margin-bottom:1rem;
+            text-align: center;
+            list-style-type: none;
+            font-size: 2rem;
+            font-weight: bold;
+            list-style-position: inside;
+
+            border-bottom: solid 1px rgba(78, 52, 46, .05);
+
+            li{
+                margin:1rem;
+                padding:.5rem;
+                border:dashed 1px rgba(78, 52, 46, .8);
+
+                color:rgba(78, 52, 46, .8);
+
+                transition: border .15s ease-in-out, color .15s ease-in-out;
+                border-radius:3px;
+
+                &:hover{
+                    border:dashed 1px rgba(78, 52, 46, 1);
+                    color:rgba(78, 52, 46, 1);
+                    cursor: pointer;
+                }
+            }
+
+            li.plank-rest-width{
+                color:rgba(231, 76, 60,.8);
+                border:none;
+
+                &:hover{
+                    cursor: unset;
+                }
+            }
+        }
+
+    }
+}

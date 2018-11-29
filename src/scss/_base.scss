@@ -1,0 +1,25 @@
+*,*::before,*::after{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input{
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+html{
+    font-size: 62.5%; 
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+ul{list-style-type: none;}
+a:link,a:visited,a:active{text-decoration: none;}

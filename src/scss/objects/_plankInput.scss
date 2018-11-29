@@ -1,0 +1,39 @@
+.plankInput{
+    font-size:32px;
+    padding:5px;
+    border:solid 3px;
+    color:#4E342E;
+    margin: 2.5rem .5rem 2.5rem .5rem;
+    transition:border-color .15s ease-in-out, border-radius .15s ease-in-out;
+    outline:none;
+    
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button{
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        margin: 0; 
+    }
+    
+    &:disabled{
+      background-color:transparent;
+      border-color:rgba(189, 195, 199, .5);
+    }
+    
+    &:enabled{
+      border-color:rgba(189, 195, 199, 1);
+    }
+    
+    &:focus{
+      border-color:rgba(78,52,46,.5);
+      border-radius:3px;
+    }
+
+    &:nth-child(1){
+      width:80%;
+    }
+
+    &:nth-child(2){
+      width:20%;
+      text-align: center;
+    }
+}

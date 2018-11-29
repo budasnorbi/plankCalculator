@@ -1,0 +1,28 @@
+@mixin initFlex($flex-direction,$vertical-pos,$horizontal-pos){
+    display:flex;
+    flex-direction: #{$flex-direction};
+
+    @if $flex-direction == 'row' or $flex-direction == 'row-reverse' {
+        justify-content: #{$horizontal-pos};
+        align-items: #{$vertical-pos};
+    }
+
+    @if $flex-direction == 'column' or $flex-direction == 'column-reverse'{
+        justify-content: #{$vertical-pos};
+        align-items: #{$horizontal-pos};
+    }
+
+}
+
+@mixin setPos($pos,$top,$left,$bottom,$right){
+    position: #{$pos};
+    top:#{$top};
+    bottom:#{$bottom};
+    left:#{$left};
+    right:#{$right};
+}
+
+@mixin setWH($w,$h){
+    width:#{$w};
+    height:#{$h}; 
+}

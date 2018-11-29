@@ -1,0 +1,30 @@
+.print-btn{
+    display: block;
+    width:5rem; height:5rem;
+    border-radius: 50%;
+    position: relative;
+
+   margin : 0 1rem 1rem 1rem;
+
+    background: none;
+    border:none;
+
+    background-image: url('../img/print.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:3rem 3rem;
+
+    transition: background-color .15s ease-in-out, opacity .15s ease-in-out;
+
+    opacity: .6;
+
+    align-self: center;
+    outline: none;
+
+    &:hover{
+        background-color: rgba(0,0,0,.05);
+        opacity: 1;
+        cursor: pointer;
+    }
+
+}
